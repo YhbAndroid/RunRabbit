@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/goods_item_iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/goods_item_iv_img">
+
+        <TextView
+            android:id="@+id/goods_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小汤圆"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goods_item_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_item_tv_name"
+            android:text="日常用品-清洁用品"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/goods_item_img_lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_item_tv_type"
+            android:src="@drawable/lessen" />
+
+        <TextView
+            android:id="@+id/goods_item_img_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_item_tv_type"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/goods_item_img_lesson"
+            android:text="5"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/goods_item_img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_item_tv_type"
+            android:layout_toRightOf="@+id/goods_item_img_num"
+            android:src="@drawable/add"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/goods_item_tv_nowprice_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_item_img_lesson"
+            android:text="￥"
+            android:textColor="#E24B42"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/goods_item_tv_nowprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_item_img_lesson"
+            android:layout_toRightOf="@+id/goods_item_tv_nowprice_symbol"
+            android:text="42"
+            android:textColor="#E24B42"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/goods_item_btn_buy"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/goods_item_tv_type"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buy_shape"
+            android:focusable="false"
+            android:text="购买"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
